@@ -15,7 +15,7 @@ pipeline{
     } 
     stage('2.mavenBuild'){
       steps{
-      sh "mvn clean package"
+      bat "mvn clean package"
       } 
     }
     stage('3.CodeQuality') {
